@@ -9,9 +9,9 @@ Emotion Classification: Employs Support Vector Machine (SVM) for efficient and p
 The custom dataset comprises self-captured images labeled with the corresponding emotions, providing a foundation for training and testing the classifier.
 
 # Technologies
-MATLAB and Computer Vision System Toolbox
-Image Processing Toolbox
-MATLAB Support Package for USB Webcams
+• MATLAB and Computer Vision System Toolbox
+• Image Processing Toolbox
+• MATLAB Support Package for USB Webcams
 
 # Usage
 Run the provided scripts in sequential order to set up the database, train the model, and execute real-time emotion recognition.
