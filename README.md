@@ -28,10 +28,6 @@ The model was trained and tested using a self-created dataset with images labele
 
 *Table 1: Training results showing the progression over epochs, demonstrating the model's increasing accuracy and decreasing loss, indicating successful learning.*
 
-![Training Results Chart](path-to-training-results-chart.png "Training Results Over Epochs")
-
-*Figure 1: The graph illustrates the model's accuracy and loss metrics over the training period.*
-
 ## Usage
 
 To test the model with your webcam, follow these steps:
@@ -40,15 +36,17 @@ To test the model with your webcam, follow these steps:
 2. Run the `TestModel.m` script to start the webcam and face detection.
 3. The live feed will display the recognized emotion as well as a label if a face is not detected.
 
+## Special Consideration
+
+During testing, we encountered challenges in distinguishing between sad and neutral emotions, leading to some similar results in these categories. This similarity suggests that these emotional states share subtle facial expressions, making them harder to differentiate purely through algorithmic means. Users should be aware of this limitation when interpreting the system's classifications.
+
+## My Experience
+
+This project has been an enriching journey into the field of computer vision and machine learning. Navigating the complexities of emotion recognition, especially the nuances between different emotional expressions, has significantly enhanced my understanding and skills in feature extraction, classification techniques, and data analysis. The challenge of distinguishing similar emotional states like sadness and neutrality has underscored the importance of continuous model improvement and dataset enrichment.
+
 ## Conclusion
 
-The project successfully researched and recognized five types of emotions with a significant degree of accuracy. The use of LBP and SVM for feature extraction and classification has proven effective, even when differentiating between similar emotional expressions.
-
-For more information on the methodologies used, visit the [wiki](#) or view the [project documentation](#).
-
----
-
-Remember to upload the actual chart image of the training results to your repository and link it properly in the markdown. Replace `path-to-training-results-chart.png` with the actual path to your image file, and `#` with the URLs to your wiki or documentation if you have them.
+The emotion recognition project achieved its goal of identifying five types of emotions with high accuracy. However, the observed similarities between sad and neutral emotional expressions highlight the need for further refinement and possibly more granular emotion categorization in future work. This system lays the groundwork for more empathetic human-computer interactions and opens the door to myriad applications in sectors requiring nuanced emotional understanding.
 
 # License
 This project is released under the MIT License.
